@@ -15,7 +15,8 @@ export default function Header() {
     >
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-6">
         {/* Logo */}
-        <Link href="/" className="text-xl font-bold tracking-tight">
+        <Link href="/" className="text-xl font-bold tracking-tight flex">
+          <img src="/favicon.png" alt="" className="max-w-[30px] mr-3" />
           Backside<span className="text-primary">Worker</span>
         </Link>
 
