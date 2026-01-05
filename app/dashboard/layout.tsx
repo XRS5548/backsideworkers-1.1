@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
-import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 import Header from "@/components/website/Header";
 import Footer from "@/components/website/Footer";
 import NextTopLoader from 'nextjs-toploader';
+import DashboardLayoutClient from "@/layouts/Dashboard";
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -26,23 +26,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-         <ThemeProvider
-            attribute="class"
-            defaultTheme="system"
-            enableSystem
-            disableTransitionOnChange
-          >
-            <NextTopLoader 
-            color="orange" />
-            <Header />
-            {children}
-            <Footer />
-          </ThemeProvider>
-      </body>
-    </html>
+    <DashboardLayoutClient>
+        {children}
+    </DashboardLayoutClient>
   );
 }
