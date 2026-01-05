@@ -2,7 +2,9 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
-
+import Header from "@/components/website/Header";
+import Footer from "@/components/website/Footer";
+import NextTopLoader from 'nextjs-toploader';
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -34,7 +36,12 @@ export default function RootLayout({
             enableSystem
             disableTransitionOnChange
           >
+            <NextTopLoader 
+            color="orange" />
+            <Header />
+            <div className="my-10"></div>
             {children}
+            <Footer />
           </ThemeProvider>
       </body>
     </html>
