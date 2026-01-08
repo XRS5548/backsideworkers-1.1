@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 export default function DashboardPage() {
   return (
     <div style={{ padding: "20px" }}>
@@ -51,4 +52,12 @@ function Card({ title, value }: { title: string; value: string }) {
       <h2 style={{ fontSize: "28px", marginTop: "6px" }}>{value}</h2>
     </div>
   );
+=======
+import React from 'react'
+
+export default function page() {
+  return (
+    <div>page</div>
+  )
+>>>>>>> e0347a048f19a79147824d8898fe570990f25da0
 }
