@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 export default function DashboardPage() {
   return (
     <div style={{ padding: "20px" }}>
@@ -9,7 +8,7 @@ export default function DashboardPage() {
       <p style={{ color: "#aaa", marginBottom: "20px" }}>
         Overview of your work
       </p>
- 
+
       <div
         style={{
           display: "grid",
@@ -24,7 +23,7 @@ export default function DashboardPage() {
         <Card title="Notifications" value="5" />
       </div>
 
-      
+
       <div>
         <h3 style={{ marginBottom: "10px" }}>Recent Activity</h3>
 
@@ -52,12 +51,8 @@ function Card({ title, value }: { title: string; value: string }) {
       <h2 style={{ fontSize: "28px", marginTop: "6px" }}>{value}</h2>
     </div>
   );
-=======
-import React from 'react'
-
-export default function page() {
-  return (
-    <div>page</div>
-  )
->>>>>>> e0347a048f19a79147824d8898fe570990f25da0
 }
+
+
+
+
